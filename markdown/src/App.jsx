@@ -1,16 +1,14 @@
-import Editor from './components/Editor'
-import Preview from './components/Preview'
+import Editor from './components/MarkdownGuide'
+import Preview from './components/MarkdownInput'
 import './App.css'
+import Header from './components/Header'
 
 function App() {
 
 
   return (
     <div>
-      <header>
-        <h1>Markdown Previewer</h1>
-        <button>Markdown Cheat Sheet</button>
-      </header>
+     <Header/>
       <div style={{ display: 'flex'}}>
           <Editor/>
           <Preview/>
