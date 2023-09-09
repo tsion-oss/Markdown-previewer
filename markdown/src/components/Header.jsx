@@ -1,19 +1,20 @@
 import { useState } from "react"
 
 export default function Header () {
-  const [toggle, setToggle] = useState()
+  const [toggle, setToggle] = useState(false)
 
   const toggleFunction = () => {
     console.log('hey')
     setToggle(!toggle)
   }
     return(
+
   <div>
     <header>
         <h1>Markdown Previewer</h1>
         <button onClick={toggleFunction}>Markdown Cheat Sheet</button>
     </header>
-
+    {toggle && (
     <div className="toggleBox">
         <h1>Markdown Cheat Sheet</h1>
         <ul>
@@ -29,6 +30,7 @@ export default function Header () {
             <li>- list item</li>
         </ul>
     </div>
+    )}
 
     </div>  
       
