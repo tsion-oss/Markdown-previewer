@@ -1,5 +1,5 @@
-import Editor from './components/MarkdownGuide'
-import Preview from './components/MarkdownInput'
+import MarkdownInput from './components/MarkdownInput'
+import MarkdownOutput from './components/MarkdownOutput'
 import './App.css'
 import Header from './components/Header'
 
@@ -10,8 +10,8 @@ function App() {
     <div>
      <Header/>
       <div style={{ display: 'flex'}}>
-          <Editor/>
-          <Preview/>
+          <MarkdownInput/>
+          <MarkdownOutput/>
      </div>
     </div>
   )

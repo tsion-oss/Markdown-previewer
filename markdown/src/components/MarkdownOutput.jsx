@@ -11,7 +11,7 @@ border: 1px solid #ccc; /* Example border */
 border-radius: 4px; /* Example border radius */
 `;
 
-export default function MarkdownOutput() {
+export default function MarkdownOutput({ markdown }) {
 
 
     return(
